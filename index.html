@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="//fdn.fontcdn.ir"><link rel="preconnect" href="//v1.fontapi.ir"><link href="https://v1.fontapi.ir/css/Vazir:400;500;700" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="search__bar__wrapper">
+            <div class="field">
+                <label for="search">جستوجو</label>
+                <input type="text" name="search" id="search" placeholder="جستوجو کنید ...">
+            </div>
+            <div class="result-wrapper hidden">
+                <div class="search-result">
+                </div>
+            </div>
+        </div>
+        <div class="items-list" items-container></div>
+        <footer>
+            <p>created by <a href="https://github.com/mehdimaroufi"> @Mehdi Maroufi</a></p>
+        </footer>
+    </div>
+
+    <template data-template-item>
+        <div class="items">
+            <div class="img-wrapper" >
+                <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/265px-Red_Apple.jpg" alt="" fruit-img>
+            </div>
+                <div>
+                    <div class="header" fruit-name>سیب</div>
+                    <div class="body" fruit-descript>سیب یک میوه برای جلوگیری از سرطان است</div>
+                </div>
+        </div>
+    </template>
+    <script src="./app.js"></script>
+</body>
+</html>
